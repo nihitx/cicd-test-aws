@@ -1,0 +1,20 @@
+# Welcome to Serverless!
+service: multicloudcicdapp
+org: masnadnehithsls
+app: multicloudcicdapp
+
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
+
+functions:
+  hello:
+    handler: handler.hello 
+    events:
+      - http:
+          method: get
+          path: hello
+          cors: true
