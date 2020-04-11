@@ -1,7 +1,7 @@
 # Welcome to Serverless!
 service: multicloudcicdapp
 org: masnadnehithsls
-app: multicloudcicdapp
+app: multicloudcicdawsapp
 
 
 provider:
